@@ -6,7 +6,7 @@ use \Exception;
 
 class Get implements Strategy
 {
-    public function get($url, $param)
+    public function execute($url, $param)
     {
         if (!ini_get('allow_url_fopen'))
         {

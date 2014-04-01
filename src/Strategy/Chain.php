@@ -15,7 +15,7 @@ class Chain
     public function handle($url, $param) {
         foreach ($this->chain as $strategy) {
             try {
-                return $strategy->get($url, $param);
+                return $strategy->execute($url, $param);
             } catch (UnavailableException $exception) {
                 // We can log this if we want
                 // We can ignore StrategyUnavailableException

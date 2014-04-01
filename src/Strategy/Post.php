@@ -7,7 +7,7 @@ use \RuntimeException;
 
 class Post implements Strategy
 {
-    public function get($url, $param)
+    public function execute($url, $param)
     {
         if (!function_exists('curl_init'))
         {

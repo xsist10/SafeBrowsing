@@ -12,8 +12,8 @@ Demo code for PHPSA14 (http://phpsouthafrica.com/) conference
 Get an API key
 --------------
 
-[Signup Page](https://developers.google.com/safe-browsing/key_signup)
-[Development Guide](https://developers.google.com/safe-browsing/)
+* [Signup Page](https://developers.google.com/safe-browsing/key_signup)
+* [Development Guide](https://developers.google.com/safe-browsing/)
 
 
 Installing
