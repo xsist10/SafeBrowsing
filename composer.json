@@ -9,7 +9,6 @@
         }
     ],
     "require": {
-        "php": ">=5.4",
         "shuber/curl": "dev-master"
     },
     "require-dev": {
