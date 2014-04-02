@@ -2,7 +2,7 @@
 
 namespace xsist10\SafeBrowsing;
 
-use xsist10\SafeBrowsing\Strategy\Chain;
+use xsist10\SafeBrowsing\Strategy\Strategy;
 
 use \Exception;
 
@@ -12,11 +12,11 @@ class SafeBrowsing
     
     private $api_key;
     
-    private $chain;
+    private $strategy;
     
-    public function __construct($api_key, Chain $chain) {
+    public function __construct($api_key, Strategy $strategy) {
         $this->api_key = $api_key;
-        $this->chain = $chain;
+        $this->strategy = $strategy;
     }
     
     function isUrlSafe($url) {
@@ -24,7 +24,7 @@ class SafeBrowsing
             throw new Exception('Invalid URL specified.');
         }
         
-        $result = $this->chain->handle(self::API_LOOKUP, [
+        $result = $this->strategy->execute(self::API_LOOKUP, [
             'client' => 'api',
             'apikey' => $this->api_key,
             'appver' => '1.0',

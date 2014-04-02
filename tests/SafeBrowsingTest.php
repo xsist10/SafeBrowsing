@@ -26,11 +26,11 @@ class SafeBrowsingTest extends PHPUnit_Framework_TestCase
 
     public function testSecure()
     {
-        $mock = $this->getMockBuilder('xsist10\SafeBrowsing\Strategy\Chain', ['handle'])
+        $mock = $this->getMockBuilder('xsist10\SafeBrowsing\Strategy\Chain', ['execute'])
             ->getMock();
 
         $mock->expects($this->once())
-            ->method('handle')
+            ->method('execute')
             ->will($this->returnValue(''));
 
         $safeBrowsing = new SafeBrowsing('', $mock);
@@ -42,11 +42,11 @@ class SafeBrowsingTest extends PHPUnit_Framework_TestCase
 
     public function testMalware()
     {
-        $mock = $this->getMockBuilder('xsist10\SafeBrowsing\Strategy\Chain', ['handle'])
+        $mock = $this->getMockBuilder('xsist10\SafeBrowsing\Strategy\Chain', ['execute'])
             ->getMock();
 
         $mock->expects($this->once())
-            ->method('handle')
+            ->method('execute')
             ->will($this->returnValue('malware'));
 
         $safeBrowsing = new SafeBrowsing('', $mock);
@@ -58,11 +58,11 @@ class SafeBrowsingTest extends PHPUnit_Framework_TestCase
 
     public function testPhishing()
     {
-        $mock = $this->getMockBuilder('xsist10\SafeBrowsing\Strategy\Chain', ['handle'])
+        $mock = $this->getMockBuilder('xsist10\SafeBrowsing\Strategy\Chain', ['execute'])
             ->getMock();
 
         $mock->expects($this->once())
-            ->method('handle')
+            ->method('execute')
             ->will($this->returnValue('phishing'));
 
         $safeBrowsing = new SafeBrowsing('', $mock);
@@ -74,11 +74,11 @@ class SafeBrowsingTest extends PHPUnit_Framework_TestCase
 
     public function testMalwareAndPhishing()
     {
-        $mock = $this->getMockBuilder('xsist10\SafeBrowsing\Strategy\Chain', ['handle'])
+        $mock = $this->getMockBuilder('xsist10\SafeBrowsing\Strategy\Chain', ['execute'])
             ->getMock();
 
         $mock->expects($this->once())
-            ->method('handle')
+            ->method('execute')
             ->will($this->returnValue('phishing malware'));
 
         $safeBrowsing = new SafeBrowsing('', $mock);

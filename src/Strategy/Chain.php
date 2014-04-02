@@ -4,7 +4,7 @@ namespace xsist10\SafeBrowsing\Strategy;
 
 use \Exception;
 
-class Chain
+class Chain implements Strategy
 {
     private $chain;
     
@@ -12,7 +12,7 @@ class Chain
         $this->chain[] = $strategy;
     }
     
-    public function handle($url, $param) {
+    public function execute($url, $param) {
         foreach ($this->chain as $strategy) {
             try {
                 return $strategy->execute($url, $param);
