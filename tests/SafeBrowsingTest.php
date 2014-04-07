@@ -1,12 +1,4 @@
 <?php
-/**
- * The Shone Security Scanner is used to help a developer determine if the versions of the
- * dependencies he is using are vulnerable to known exploits.
- *
- * @category Shone
- * @package  Scanner
- * @author   Thomas Shone <xsist10@gmail.com>
- */
 
 use xsist10\SafeBrowsing\SafeBrowsing;
 use xsist10\SafeBrowsing\Strategy\Chain;

@@ -13,6 +13,10 @@ class Chain implements Strategy
     }
     
     public function execute($url, $param) {
+        if (empty($this->chain)) {
+            throw new Exception('No available strategy.');
+        }
+
         foreach ($this->chain as $strategy) {
             try {
                 return $strategy->execute($url, $param);
@@ -23,6 +27,6 @@ class Chain implements Strategy
             }
         }
         
-        throw new Exception('No available strategy.');
+        throw new Exception('All available strategies failed.');
     }
 }

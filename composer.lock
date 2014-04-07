@@ -3,41 +3,9 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "d146c4ab3cece71054043fd582cfcaba",
+    "hash": "688eac63bc64ec604ba912d77f10bed8",
     "packages": [
-        {
-            "name": "shuber/curl",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hamstar/curl.git",
-                "reference": "6624992df201f9fd7262080117385dd09b0ecd2b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hamstar/curl/zipball/6624992df201f9fd7262080117385dd09b0ecd2b",
-                "reference": "6624992df201f9fd7262080117385dd09b0ecd2b",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "curl.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "PHP Wrapper for Curl",
-            "keywords": [
-                "bot",
-                "curl",
-                "scraper",
-                "spider"
-            ],
-            "time": "2013-11-23 01:44:31"
-        }
+
     ],
     "packages-dev": [
         {
@@ -105,16 +73,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "a05618d03c60eb07b37432583aabf80ae5f5f447"
+                "reference": "3dcca2120451b98a98fe60221ca279a184ee64db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/a05618d03c60eb07b37432583aabf80ae5f5f447",
-                "reference": "a05618d03c60eb07b37432583aabf80ae5f5f447",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/3dcca2120451b98a98fe60221ca279a184ee64db",
+                "reference": "3dcca2120451b98a98fe60221ca279a184ee64db",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +133,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-03-20 16:12:25"
+            "time": "2014-03-28 10:54:55"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -356,12 +324,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "fca5bc6a50d09b26db280c5cc3c84978c9cace3f"
+                "reference": "a80b77d92a6c7723d77c6728b4ae37e92a65ac1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fca5bc6a50d09b26db280c5cc3c84978c9cace3f",
-                "reference": "fca5bc6a50d09b26db280c5cc3c84978c9cace3f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a80b77d92a6c7723d77c6728b4ae37e92a65ac1d",
+                "reference": "a80b77d92a6c7723d77c6728b4ae37e92a65ac1d",
                 "shasum": ""
             },
             "require": {
@@ -423,7 +391,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-03-26 11:55:27"
+            "time": "2014-03-28 11:10:03"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -851,17 +819,17 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe"
+                "reference": "ef20f1f58d7f693ee888353962bd2db336e3bbcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/940f217cbc3c8a33e5403e7c595495c4884400fe",
-                "reference": "940f217cbc3c8a33e5403e7c595495c4884400fe",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ef20f1f58d7f693ee888353962bd2db336e3bbcb",
+                "reference": "ef20f1f58d7f693ee888353962bd2db336e3bbcb",
                 "shasum": ""
             },
             "require": {
@@ -902,21 +870,21 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-02-11 13:52:09"
+            "time": "2014-03-01 17:35:04"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011"
+                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/b6735d1fc16da13c4c7dddfe78366a4a098cf011",
-                "reference": "b6735d1fc16da13c4c7dddfe78366a4a098cf011",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/ab301c7d21f536c34ab6c2c79dba8d465104c518",
+                "reference": "ab301c7d21f536c34ab6c2c79dba8d465104c518",
                 "shasum": ""
             },
             "require": {
@@ -951,21 +919,21 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-01 17:35:04"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.4.2",
+            "version": "v2.4.3",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3"
+                "reference": "77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
-                "reference": "bb6ddaf8956139d1b8c360b4b713ed0138e876b3",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd",
+                "reference": "77a41c2835ab7cfe8bf6d15e25d3af8f3eb3bacd",
                 "shasum": ""
             },
             "require": {
@@ -1000,7 +968,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:28:54"
+            "time": "2014-03-12 18:29:58"
         },
         {
             "name": "theseer/fdomdocument",
@@ -1048,7 +1016,6 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "shuber/curl": 20,
         "phpunit/phpunit": 20,
         "sebastian/phpcpd": 20,
         "squizlabs/php_codesniffer": 20

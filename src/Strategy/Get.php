@@ -4,6 +4,9 @@ namespace xsist10\SafeBrowsing\Strategy;
 
 use \Exception;
 
+/**
+ * @codeCoverageIgnoreStart
+ */
 class Get implements Strategy
 {
     public function execute($url, $param)

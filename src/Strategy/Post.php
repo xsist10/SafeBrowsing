@@ -5,6 +5,9 @@ namespace xsist10\SafeBrowsing\Strategy;
 use \Exception;
 use \RuntimeException;
 
+/**
+ * @codeCoverageIgnoreStart
+ */
 class Post implements Strategy
 {
     public function execute($url, $param)
