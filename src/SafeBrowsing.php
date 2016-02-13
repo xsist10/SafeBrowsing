@@ -26,7 +26,7 @@ class SafeBrowsing
         
         $result = $this->strategy->execute(self::API_LOOKUP, [
             'client' => 'api',
-            'apikey' => $this->api_key,
+            'key' => $this->api_key,
             'appver' => '1.0',
             'pver'   => '3.0',
             'url'    => $url
